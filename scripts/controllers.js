@@ -22,6 +22,8 @@ storeApp.config(function($routeProvider){
 });
 
 
+	
+
 storeApp.controller('appleController',['$scope', function($scope){
 		$scope.items= [
 			{	'name': 'apple',
@@ -29,6 +31,7 @@ storeApp.controller('appleController',['$scope', function($scope){
 				'price': '$1'
 			}
 		]	
+
 }]);
 storeApp.controller('bookController', ['$scope', function($scope){
 		// $scope.items= [
@@ -38,6 +41,7 @@ storeApp.controller('bookController', ['$scope', function($scope){
 		// 	}
 		// ]
 		$scope.name = 'book';
+
 }]);
 storeApp.controller('carController', ['$scope', function($scope){
 		$scope.items= [
@@ -48,3 +52,4 @@ storeApp.controller('carController', ['$scope', function($scope){
 			}
 		]
 }]);
+
