@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app='storeApp'>
+<html ng-app="storeApp">
 <head>
 	<title>angular practice</title>
 	<script type="text/javascript" src="scripts/angular.min.js"></script>
@@ -8,9 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<a class="button" href ng-click="/index.html">home</a>
-	<a class="button" href ng-click="/book.html">book</a>
-	<a class="button" href ng-click="/car.html">car</a>
+	<button class="button" ng-click="go('/index')">home</button>
+	<button class="button" ng-click="go('/book')">book</button>
+	<button class="button" ng-click="go('/car')">car</button>
 	<div ng-view></div>
 </body>
 </html>
